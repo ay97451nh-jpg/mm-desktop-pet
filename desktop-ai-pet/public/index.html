@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mm - 你的特别朋友</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffb6c1">
+    <meta name="description" content="mm - 你的朋友，但有点特别">
+</head>
+<body>
+    <!-- 悬浮宠物主体 -->
+    <div id="floatingPet" class="floating-pet">
+        <div class="pet-avatar">🌸</div>
+        <div class="pet-drag-handle"></div>
+    </div>
+
+    <!-- 聊天窗口 -->
+    <div id="chatWindow" class="chat-window hidden">
+        <div class="chat-header">
+            <span class="chat-title">mm - 你的朋友</span>
+            <button id="closeChat" class="close-btn">×</button>
+        </div>
+        
+        <div id="chatMessages" class="chat-messages">
+            <!-- 消息会动态添加在这里 -->
+        </div>
+        
+        <div class="chat-input-area">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="和你的朋友mm聊天..." 
+                    maxlength="500"
+                >
+                <button id="sendButton" class="send-btn">
+                    <span>发送</span>
+                </button>
+            </div>
+            <div class="input-hint">
+                按 Enter 发送，Shift + Enter 换行
+            </div>
+        </div>
+    </div>
+
+    <!-- 安装提示 -->
+    <div id="installPrompt" class="install-prompt hidden">
+        <div class="install-content">
+            <p>将mm安装到桌面，随时陪伴你~</p>
+            <button id="installButton">安装</button>
+            <button id="cancelInstall">稍后</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

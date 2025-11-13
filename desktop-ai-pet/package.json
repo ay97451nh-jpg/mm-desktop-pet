@@ -1,0 +1,13 @@
+{
+  "name": "mm-desktop-pet",
+  "version": "1.0.0",
+  "description": "mm - 你的朋友，但有点特别",
+  "main": "public/app.js",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "start": "npm run dev"
+  },
+  "keywords": ["pwa", "desktop-pet", "ai-chat", "virtual-companion"],
+  "author": "mm Project",
+  "license": "MIT"
+}
